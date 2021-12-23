@@ -9,14 +9,17 @@ packages = [
     { include = "shovel/" },
 ]
 
+[tool.poetry.scripts]
+shv = "shovel.cli:shovel"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 typer = "^0.4.0"
 rich = "^10.16.1"
 icmplib = "^3.0.2"
-ipwhois = "^1.2.0"
 prompt-toolkit = "^3.0.24"
 requests = "^2.26.0"
+aslookup = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 

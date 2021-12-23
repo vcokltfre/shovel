@@ -1,4 +1,16 @@
 [[package]]
+name = "aslookup"
+version = "1.2.0"
+description = "IP to AS routing data query script"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+dnspython = "*"
+pytricia = "*"
+
+[[package]]
 name = "certifi"
 version = "2021.10.8"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -79,17 +91,6 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
-name = "ipwhois"
-version = "1.2.0"
-description = "Retrieve and parse whois data for IPv4 and IPv6 addresses."
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-dnspython = "<=2.0.0"
-
-[[package]]
 name = "prompt-toolkit"
 version = "3.0.24"
 description = "Library for building powerful interactive command lines in Python"
@@ -107,6 +108,14 @@ description = "Pygments is a syntax highlighting package written in Python."
 category = "main"
 optional = false
 python-versions = ">=3.5"
+
+[[package]]
+name = "pytricia"
+version = "1.0.2"
+description = "An efficient IP address storage and lookup module for Python."
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "requests"
@@ -183,9 +192,13 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "3f901478bf49879fc88706227549d565411df22999e622ea73f8cb40316023f0"
+content-hash = "a7b54ff6010f7bf1247c2eb456efb32c380e118d6dcc79ba4d97aec641a5d6fe"
 
 [metadata.files]
+aslookup = [
+    {file = "aslookup-1.2.0-py3-none-any.whl", hash = "sha256:eb8900365c1907e9525c942d66c0be7208027026699846d18a8bc4064c190793"},
+    {file = "aslookup-1.2.0.tar.gz", hash = "sha256:b0e48e9bdf1634329afe019a80b9ebd24d0e4ae8e926ac3a274d1b2d1aa8d6d3"},
+]
 certifi = [
     {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
     {file = "certifi-2021.10.8.tar.gz", hash = "sha256:78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"},
@@ -218,10 +231,6 @@ idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
     {file = "idna-3.3.tar.gz", hash = "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"},
 ]
-ipwhois = [
-    {file = "ipwhois-1.2.0-py2.py3-none-any.whl", hash = "sha256:9f14dfafb5d9eb7c7f56ab34cfad9868b5e453ab4161a90d69fb714fe712056a"},
-    {file = "ipwhois-1.2.0.tar.gz", hash = "sha256:831e3fef3b8041201a048e9456e3b80f45c6c8b7174f34ed211f66b596c84bbe"},
-]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.24-py3-none-any.whl", hash = "sha256:e56f2ff799bacecd3e88165b1e2f5ebf9bcd59e80e06d395fa0cc4b8bd7bb506"},
     {file = "prompt_toolkit-3.0.24.tar.gz", hash = "sha256:1bb05628c7d87b645974a1bad3f17612be0c29fa39af9f7688030163f680bad6"},
@@ -229,6 +238,10 @@ prompt-toolkit = [
 pygments = [
     {file = "Pygments-2.10.0-py3-none-any.whl", hash = "sha256:b8e67fe6af78f492b3c4b3e2970c0624cbf08beb1e493b2c99b9fa1b67a20380"},
     {file = "Pygments-2.10.0.tar.gz", hash = "sha256:f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"},
+]
+pytricia = [
+    {file = "pytricia-1.0.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:ee49486fd0726eca7d2219029bef162652ca80dfb07f7eedadc6cfc5f3559231"},
+    {file = "pytricia-1.0.2.tar.gz", hash = "sha256:7f6c0afdce55a1b7651a1a56d8b621c228a211dd23f3f8c5c1fdec3af2c19b15"},
 ]
 requests = [
     {file = "requests-2.26.0-py2.py3-none-any.whl", hash = "sha256:6c1246513ecd5ecd4528a0906f910e8f0f9c6b8ec72030dc9fd154dc1a6efd24"},
